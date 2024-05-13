@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name" translatable="false">Lognormal</string>
+    <string name="greeting">Hello!</string>
+    <string name="explanation">This app can help you with finding of a random number in accordance with the lognormal distribution law.</string>
+    <string name="mu_val">Please, enter μ:</string>
+    <string name="sigma_val">Please, enter σ²:</string>
+    <string name="num_request">Enter a number</string>
+    <string name="number">Your number:</string>
+    <string name="number_field">Your number will appear here:</string>
+    <string name="generation">Generate</string>
+    <string name="error_numLimit">Error! The number limit is exceeded!</string>
+    <string name="error_wrongData">Error! Wrong data!</string>
+</resources>

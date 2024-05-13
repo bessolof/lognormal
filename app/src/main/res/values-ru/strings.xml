@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="explanation">Это приложение может помочь с нахлждением случайной величины, подчиняющейся логнормальному распределению.</string>
+    <string name="greeting">Привет!</string>
+    <string name="mu_val">Пожалуйста, введите μ:</string>
+    <string name="sigma_val">Пожалуйста, введите σ²:</string>
+    <string name="num_request">Введите число</string>
+    <string name="number">Ваше число:</string>
+    <string name="number_field">Тут отобразится ваше число</string>
+    <string name="generation">Сгенерировать</string>
+    <string name="error_numLimit">Ошибка! Лимит числа превышен!</string>
+    <string name="error_wrongData">Ошибка! Введены неверные данные!</string>
+</resources>
