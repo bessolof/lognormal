@@ -2,6 +2,12 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
+      <entry key="InstrumentedTest">
+        <State />
+      </entry>
+      <entry key="addGeneratedNumber()">
+        <State />
+      </entry>
       <entry key="app">
         <State />
       </entry>
