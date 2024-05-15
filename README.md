@@ -10,7 +10,7 @@ You just need to enter mu and sigma^2 and we instantly generate you a number, wh
 ### Features:
 
 - Lognormal number generation
-- 2 languages are supported
+- 2 languages are supported: Russian and English
 - Dark and light themes
 - Landscape mode is supported
 
