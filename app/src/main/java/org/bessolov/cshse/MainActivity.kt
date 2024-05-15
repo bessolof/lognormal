@@ -22,6 +22,8 @@ class MainActivity : AppCompatActivity() {
         findViewById<TextView>(R.id.greeting).typeface = ResourcesCompat.getFont(this, R.font.hsesans_black)
         findViewById<TextView>(R.id.greeting).setTextSize(TypedValue.COMPLEX_UNIT_SP, 50.toFloat())
 
+        val numberGenerator = NumberGenerator()
+
         val btt: Button = findViewById<Button>(R.id.get_random_num)
         btt.setOnClickListener {
             val mu : Double? = findViewById<TextView>(R.id.mean_val).text.toString().toDoubleOrNull()
@@ -29,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
             if (sigmaSquared != null && mu != null) {
                 if (mu != 0.0) {
-                    findViewById<TextView>(R.id.random_number_result).text = generateNumber(mu, sigmaSquared).toString()
+                    findViewById<TextView>(R.id.random_number_result).text = numberGenerator.generateNumber(mu, sigmaSquared).toString()
                     if (findViewById<TextView>(R.id.random_number_result).text == "NaN") {
                         findViewById<TextView>(R.id.random_number_result).text = getString(R.string.error_numLimit)
                     }
@@ -42,15 +44,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun changeStatusBarColor(color: String) {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            val window: Window = window
-            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
-            window.statusBarColor = android.graphics.Color.parseColor(color)
-        }
-    }
-
-    fun generateNumber(mu : Double, sigmaSquared : Double) : Double {
+    /*fun generateNumber(mu : Double, sigmaSquared : Double) : Double {
         val u1 = 1.0 - Math.random()
         val u2 = 1.0 - Math.random()
 
@@ -61,5 +55,13 @@ class MainActivity : AppCompatActivity() {
 
         val normalRandom = z * normalStdDev + normalMean
         return exp(normalRandom)
+    }*/
+
+    private fun changeStatusBarColor(color: String) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            val window: Window = window
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+            window.statusBarColor = android.graphics.Color.parseColor(color)
+        }
     }
 }
