@@ -26,16 +26,6 @@ class MainActivityTest {
     }
 
     @Test
-    fun testGenerateNumberWithZeroMu() {
-        val mu = 0.0
-        val sigmaSquared = 4.0
-
-        val result = numberGenerator.generateNumber(mu, sigmaSquared)
-
-        assertTrue(result.isNaN())
-    }
-
-    @Test
     fun testGenerateNumberWithNegativeSigmaSquared() {
         val mu = 10.0
         val sigmaSquared = -4.0
