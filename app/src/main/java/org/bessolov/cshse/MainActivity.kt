@@ -44,19 +44,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    /*fun generateNumber(mu : Double, sigmaSquared : Double) : Double {
-        val u1 = 1.0 - Math.random()
-        val u2 = 1.0 - Math.random()
-
-        val z = sqrt(-2.0 * ln(u1)) * cos(2.0 * PI * u2)
-
-        val normalMean = ln(mu.pow(2.0) / kotlin.math.sqrt(mu.pow(2.0) + sigmaSquared))
-        val normalStdDev = kotlin.math.sqrt(ln(1 + (sigmaSquared / mu.pow(2.0))))
-
-        val normalRandom = z * normalStdDev + normalMean
-        return exp(normalRandom)
-    }*/
-
     private fun changeStatusBarColor(color: String) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             val window: Window = window
