@@ -1,5 +1,6 @@
 package org.bessolov.cshse
 
+import org.apache.commons.math3.distribution.LogNormalDistribution
 import java.util.Random
 import kotlin.math.cos
 import kotlin.math.exp
@@ -19,12 +20,14 @@ class NumberGenerator {
 
         val normalRandom = z * normalStdDev + normalMean
         return exp(normalRandom)
-    } */
+    }
 
     fun generateNumber(mu : Double, sigmaSquared: Double): Double {
         val u1 = random.nextDouble()
         val u2 = random.nextDouble()
         val z = sqrt(-2 * ln(u1)) * cos(2 * Math.PI * u2)
         return mu + z * sigmaSquared
-    }
+    }*/
+    fun generateNumber(mean: Double, std: Double): Double =
+        LogNormalDistribution(mean, std).sample()
 }
