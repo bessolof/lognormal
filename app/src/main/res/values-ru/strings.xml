@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="explanation">Это приложение может помочь с нахлждением случайной величины, подчиняющейся логнормальному распределению.</string>
+    <string name="explanation">Это приложение может помочь с нахождением случайной величины, подчиняющейся логнормальному распределению.</string>
     <string name="greeting">Привет!</string>
     <string name="mu_val">Пожалуйста, введите μ:</string>
     <string name="sigma_val">Пожалуйста, введите σ²:</string>
